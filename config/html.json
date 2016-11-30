@@ -2,7 +2,6 @@
   "android": {
     "link[rel='manifest'][href$='manifest.json']": "<link rel='manifest' href='manifest.json'>",
     "meta[name='mobile-web-app-capable']": "<meta name='mobile-web-app-capable' content='yes'>",
-    "meta[name='theme-color']": "<meta name='theme-color' content='#FFFFFF'>",
     "meta[name='application-name']": "<meta name='application-name' content='Application'>"
   },
   "appleIcon": {
@@ -16,7 +15,6 @@
     "link[rel='apple-touch-icon'][sizes='152x152'][href$='apple-touch-icon-152x152.png']": "<link rel='apple-touch-icon' sizes='152x152' href='apple-touch-icon-152x152.png'>",
     "link[rel='apple-touch-icon'][sizes='180x180'][href$='apple-touch-icon-180x180.png']": "<link rel='apple-touch-icon' sizes='180x180' href='apple-touch-icon-180x180.png'>",
     "meta[name='apple-mobile-web-app-capable']": "<meta name='apple-mobile-web-app-capable' content='yes'>",
-    "meta[name='apple-mobile-web-app-status-bar-style']": "<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>",
     "meta[name='apple-mobile-web-app-title']": "<meta name='apple-mobile-web-app-title' content='Application'>"
   },
   "appleStartup": {
