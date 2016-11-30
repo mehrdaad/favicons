@@ -1,11 +1,11 @@
 {
-  "name": "favicons",
-  "version": "4.8.3",
+  "name": "favicons-without-theme",
+  "version": "4.8.4",
   "description": "Favicon generator for Node.js",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/haydenbleasel/favicons.git"
+    "url": "https://github.com/mehrdaad/favicons.git"
   },
   "scripts": {
     "test": "cd test && node test.js && gulp",
@@ -19,12 +19,12 @@
     "realfavicongenerator",
     "gulpfriendly"
   ],
-  "author": "Hayden Bleasel <haydenbleasel@gmail.com>",
+  "author": "Mehrdad Shokri <code.poet95@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/haydenbleasel/favicons/issues"
+    "url": "https://github.com/mehrdaad/favicons/issues"
   },
-  "homepage": "https://github.com/haydenbleasel/favicons",
+  "homepage": "https://github.com/mehrdaad/favicons",
   "dependencies": {
     "async": "^1.5.0",
     "cheerio": "^0.19.0",

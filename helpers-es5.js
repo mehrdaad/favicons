@@ -1,6 +1,6 @@
 'use strict';
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /* eslint camelcase: 0, no-shadow: 0 */
 
@@ -93,8 +93,8 @@ var path = require('path'),
             });
 
             _.each(PLATFORM_OPTIONS, function (_ref, key) {
-                var platforms = _ref.platforms;
-                var defaultTo = _ref.defaultTo;
+                var platforms = _ref.platforms,
+                    defaultTo = _ref.defaultTo;
 
                 if (typeof options[key] == 'undefined' && platforms.indexOf(platform) != -1) {
                     options[key] = defaultTo;
@@ -349,9 +349,9 @@ var path = require('path'),
                     });
                     options.background = '#' + color(options.background).toHex();
                     request.master_picture.content = (svgSource || _.max(sourceset, function (_ref2) {
-                        var _ref2$size = _ref2.size;
-                        var width = _ref2$size.width;
-                        var height = _ref2$size.height;
+                        var _ref2$size = _ref2.size,
+                            width = _ref2$size.width,
+                            height = _ref2$size.height;
                         return Math.max(width, height);
                     })).file.toString('base64');
                     request.files_location.path = options.path;
